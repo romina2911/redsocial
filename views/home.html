@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cozy Room</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png">
+  <!-- Framework Materialize CSS -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- Iconos de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="bg-cc"> 
+  <!-- Cabecera, menú hamburguesa -->
+  <nav class="navCollapsible">
+    <div class="nav-wrapper bg-bd">
+      <a href="#!" class="brand-logo">Inicio</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li id="dataUser"></li>
+        <li><a href="#">Mensajes</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+          <li><div class="user-view">
+              <div class="background">
+                <img src="../assets/images/flat.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="../assets/images/flat.jpg"></a>
+              <a href="#!name" id="dataUser">
+              <a href="#!email"><span class="email t-g" id="dataEmail">jdandturk@gmail.com</span></a>
+            </div>
+          </li>
+        <li><a href="#">Mensajes</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Sección para publicar -->
+  <section class="mypublication">
+    <div class="row">
+      <div class="col s12 offset-m3 m6">
+        <div class="card">
+          <div class="card-content">
+            <textarea name="" id="areaPublication" cols="30" rows="10" class="areaPublication" placeholder="Comparte una publicación" autofocus></textarea>
+          </div>
+          <div class="card-action">
+            <div class="row">
+              <div class="col s3 file-field btn bg-c">
+                <span class="material-icons">add_a_photo</span>                 
+                <input type="file" class="btn btn-w t-c">                
+              </div>
+              <div class="col s6">
+                <a id="post" href="#" class="btn bg-c" disabled>Publicar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sección de publicaciones  -->
+  <section class="publications">
+    <div class="row">
+        <div class="col s12 offset-m3 m6">
+          <div id="msg" class="card">
+            
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col s12 offset-m3 m6">
+        <div class="card">
+          <div class="header">
+            <div class="col s2 center-align">
+              <img src="../assets/images/profile_pic.jpg" alt="" class="circle responsive-img">
+            </div>
+            <div class="col s10">
+                <h5><strong>Julio Alvines</strong></h5>
+                <p class="dateTime">10 ene. a las 02:01pm</p>
+            </div>
+          </div>
+          <div class="card-content">
+              <p>Nuevas habitaciones amobladas o sin amoblar con baño propio agua caliente por el colegio precursores incluye servicio de agua luz e internet desde S/.350</p>            
+            <img src="../assets/images/habitacion01.jpg" class="responsive-img" alt="">
+            <img src="../assets/images/habitacion02.jpg" class="responsive-img" alt="">
+          </div>
+          <div class="card-action">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Añadir un comentario" class="areaPublication"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col s12 offset-m3 m6">
+          <div class="card">
+            <div class="header">
+              <div class="col s2 center-align">
+                <img src="../assets/images/profile_pic.jpg" alt="" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                  <h5><strong>Elena Castillo</strong></h5>
+                  <p class="dateTime">6 ene. a las 11:01pm</p>
+              </div>
+            </div>
+            <div class="card-content">
+              <p>Amplia habitación disponible para personas solas que trabajan o estudian con baño propio, mayólica en todos los ambientes, puertas decoradas, ingreso independiente, intercomunicador (abre puerta principal), puerta reforzada y medidor de luz independiente.</p>
+              <img src="../assets/images/habitacion03.jpg" class="responsive-img" alt="">
+            </div>
+            <div class="card-action">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Añadir un comentario" class="areaPublication"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Barra de navegación con iconos -->  
+  <div class="navIcons">
+    <div class="row">
+      <div class="col s3 t-c divIcons">
+        <div class="center-align"><a href=""><i class="medium material-icons">home</i></a></div>       
+        <h6 class="center-align hidden">Inicio</h6>
+      </div>
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="search.html"><i class="medium material-icons">search</i></a></div>        
+        <h6 class="center-align hidden">Buscar</h6>
+      </div>
+      <div class="col s3 divIcons">
+          <div class="center-align"><a href="contact.html"><i class="medium material-icons">group</i></a></div>
+        <h6 class="center-align hidden">Contactos</h6>
+      </div>
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="profile.html"><i class="medium material-icons">person</i></a></div>
+        <h6 class="center-align hidden">Perfil</h6>
+      </div>
+    </div>
+  </div>
+  <!-- Libreria JQuery -->
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <!-- JS Materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Libreria de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- Referencias de conexión con Firebase -->
+  <script src="../js/conexion.js"></script>
+  <!-- JS NAV ICON -->
+  <script src="../js/navIcon.js"></script>
+  <!-- JS personalizado -->
+  <script src="../js/home.js"></script>
+</body>
+</html>

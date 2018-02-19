@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cozy Room</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png">
+  <!-- Framework Materialize CSS -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- Iconos de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="bg-cc"> 
+  <!-- Cabecera -->
+  <nav class="navCollapsible">
+      <div class="nav-wrapper bg-bd">
+        <a href="#!" class="brand-logo">Perfil</a>
+      </div>
+    </nav>
+  <!-- -->
+  <div class="container profile-wrapper">
+    <div class="row">
+      <div class="offset-s3 col s6">
+        <div><!-- Img de fondo -->
+          <img src="../assets/images/profile_pic.jpg" class="responsive-img circle" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="offset-s1 col s10">
+          <h4>Nombre y Apellido</h4> 
+          <a href="" class="btn center-align bg-c"><i class="material-icons">edit</i>Editar Perfil</a>
+        </div>
+    </div>
+  </div>
+  <!-- Barra de navegación con iconos -->  
+  <div class="navIcons">
+    <div class="row">
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="home.html"><i class="medium material-icons">home</i></a></div>       
+        <h6 class="center-align hidden">Inicio</h6>
+      </div>
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="search.html"><i class="medium material-icons">search</i></a></div>        
+        <h6 class="center-align hidden">Buscar</h6>
+      </div>
+      <div class="col s3 divIcons">
+          <div class="center-align"><a href="contact.html"><i class="medium material-icons">group</i></a></div>
+        <h6 class="center-align hidden">Contactos</h6>
+      </div>
+      <div class="col s3 divIcons t-c">
+        <div class="center-align"><a href=""><i class="medium material-icons">person</i></a></div>
+        <h6 class="center-align hidden">Perfil</h6>
+      </div>
+    </div>
+  </div>
+  <!-- Libreria JQuery -->
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <!-- JS Materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Libreria de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- Referencias de conexión con Firebase -->
+  <script src="../js/conexion.js"></script>
+  <!-- JS NAV ICON -->
+  <script src="../js/navIcon.js"></script>
+  <!-- JS personalizado -->
+  <script src="../js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cozy Room</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png">
+  <!-- Framework Materialize CSS -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- Iconos de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="bg-cc"> 
+  <!-- Cabecera, menú hamburguesa -->
+  <nav class="navCollapsible">
+    <div class="nav-wrapper bg-bd">
+      <a href="#!" class="brand-logo">Amigos</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Nombre y Apellido</a></li>
+        <li><a href="#">Mensajes</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+          <li><div class="user-view">
+              <div class="background">
+                <img src="../assets/images/flat.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="../assets/images/flat.jpg"></a>
+              <a href="#!name"><span class="name t-g">John Doe</span></a>
+              <a href="#!email"><span class="email t-g">jdandturk@gmail.com</span></a>
+            </div></li>
+        <li><a href="#">Mensajes</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Barra de navegación con iconos -->  
+  <div class="navIcons">
+    <div class="row">
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="home.html"><i class="medium material-icons">home</i></a></div>       
+        <h6 class="center-align hidden">Inicio</h6>
+      </div>
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="search.html"><i class="medium material-icons">search</i></a></div>        
+        <h6 class="center-align hidden">Buscar</h6>
+      </div>
+      <div class="col s3 divIcons t-c">
+          <div class="center-align"><a href=""><i class="medium material-icons">group</i></a></div>
+        <h6 class="center-align hidden">Contactos</h6>
+      </div>
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="profile.html"><i class="medium material-icons">person</i></a></div>
+        <h6 class="center-align hidden">Perfil</h6>
+      </div>
+    </div>
+  </div>
+  <!-- Libreria JQuery -->
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <!-- JS Materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Libreria de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- Referencias de conexión con Firebase -->
+  <script src="../js/conexion.js"></script>
+  <!-- JS NAV ICON -->
+  <script src="../js/navIcon.js"></script>
+  <!-- JS personalizado -->
+  <script src="../js/home.js"></script>
+</body>
+</html>

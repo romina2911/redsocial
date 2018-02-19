@@ -10,28 +10,47 @@
   <!-- CSS Personalizado -->
   <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-  
-    <div class="row">
-      <form class="col s12">
+<body class="imgback">
+  <div class="view-mobile">
+    <div class="container">
         <div class="row">
-          <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">Nombres</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-              <label for="last_name">Apellidos</label>
+          <div class="col s12">
+            <h1>Cozy Room</h1>
           </div>
         </div>
-      </form>
-    </div>
-  
+        <div class="row bg-dark signup">
+          <form class="offset-s1 col s10">              
+            <div class="input-field col s12">
+              <input id="name" type="text" class="validate">
+              <label for="name" class="registry">Nombre</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name" class="registry">Apellidos</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email" class="registry">E-mail</label>
+            </div> 
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password" class="registry">Contraseña</label>
+            </div> 
+            <a id="guardar" class="waves-effect waves-light btn col s12 btn-disabled bg-c" type="submit" disabled>Guardar</a>
+            <a id="next" class="waves-effect waves-light btn col s12 btn-color" >Siguiente</a>
+            </form>
+          </div>
+      </div>
+  </div>    
   <!-- Libreria JQuery  -->
-  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
   <!-- JS Materialize -->
   <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="../js/conexion.js"></script>
+  <script src="../js/data.js"></script>
   <!-- JS Personalizado -->
-  <script src="../js/main.js"></script>
+  <script src="../js/registry.js"></script>
 </body>
 </html>

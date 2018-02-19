@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cozy Room</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png">
+  <!-- Framework Materialize CSS -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- Iconos de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="bg-cc"> 
+  <!-- Cabecera -->
+  <nav class="navCollapsible">
+    <div class="nav-wrapper bg-bd">
+      <a href="#!" class="brand-logo">Buscar</a>
+    </div>
+  </nav>
+  <!-- Buscador -->
+  <div class="container">
+  <div class="row">
+      <form>
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+      </form>
+  </div></div>
+  <main>
+      <!-- LISTA DE HABITACIONES LLAMADO DESDE LA DATA y JQUERY-->
+      <section>
+       <div id="list-alojamiento" class="container">
+        <div class="row">
+         <!-- <div class="col-xs-12 col-md-6 restaurant-container"></div> -->
+         <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="https://fhaunt.com/archivos/multimedia/imagen/204-595a91635c7f9.JPG">
+          </div>
+          <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4">Cuarto Privado<i class="material-icons right">more_vert</i></span>
+           <p><a href="https://www.google.com.pe/maps/place/Alameda+Los+Cedros+556,+Cercado+de+Lima+15067/@-12.2054773,-77.0144103,17z/data=!3m1!4b1!4m5!3m4!1s0x9105b7585b8fc411:0x5fe076ab8ba663cb!8m2!3d-12.2054826!4d-77.0122216">Ver ubicación</a></p>
+          </div>
+          <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Más información de la habitación<i class="material-icons right">close</i></span>
+           <p><b>Ubicación:</b> Av. 2 de mayo - Chorrillos</p>
+           <p><b>Costo:</b> S/. 120</p>
+           <p><b>Dormitorios:</b> Individuales - con baño propio</p>
+           <p><b>Reglas de casa:</b>
+           <br>
+           - Reglas de la casa <br>
+           - No se admiten fiestas o eventos <br>
+           - La hora de llegada es flexible <br>
+           - Llegada con acceso libre con candado</p> 
+           <p><b>Calificación:</b><i class="Small material-icons">star_border</i><i class="Small material-icons">star_border</i><i class="Small material-icons">star_border</i></p> 
+          </div>
+         </div>
+         <div class="card">
+             <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://images01.olx-st.com/ui/51/01/05/27/o_1515599622_5bd650f540fdb81dbedefbc4414a7243.jpg">
+             </div>
+             <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Cuarto Privado<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://www.google.com.pe/maps/place/Alameda+Los+Cedros+556,+Cercado+de+Lima+15067/@-12.2054773,-77.0144103,17z/data=!3m1!4b1!4m5!3m4!1s0x9105b7585b8fc411:0x5fe076ab8ba663cb!8m2!3d-12.2054826!4d-77.0122216">Ver ubicación</a></p>
+             </div>
+             <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Más información de la habitación<i class="material-icons right">close</i></span>
+              <p><b>Ubicación:</b> Av. 2 de mayo - Chorrillos</p>
+              <p><b>Costo:</b> S/. 120</p>
+              <p><b>Dormitorios:</b> Individuales - con baño propio</p>
+              <p><b>Reglas de casa:</b>
+              <br>
+              - Reglas de la casa <br>
+              - No se admiten fiestas o eventos <br>
+              - La hora de llegada es flexible <br>
+              - Llegada con acceso libre con candado</p> 
+              <p><b>Calificación:</b><i class="Small material-icons">star_border</i><i class="Small material-icons">star_border</i><i class="Small material-icons">star_border</i></p> 
+             </div>
+            </div>    
+            <div class="card">
+               <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="https://http2.mlstatic.com/alquiler-de-habitaciones-cerca-a-universidad-ricardo-palma-D_NQ_NP_709462-MPE26421316901_112017-O.jpg">
+               </div>
+               <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Cuarto Privado<i class="material-icons right">more_vert</i></span>
+                <p><a href="https://www.google.com.pe/maps/place/Alameda+Los+Cedros+556,+Cercado+de+Lima+15067/@-12.2054773,-77.0144103,17z/data=!3m1!4b1!4m5!3m4!1s0x9105b7585b8fc411:0x5fe076ab8ba663cb!8m2!3d-12.2054826!4d-77.0122216">Ver ubicación</a></p>
+               </div>
+               <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Más información de la habitación<i class="material-icons right">close</i></span>
+                <p><b>Ubicación:</b> Av. 2 de mayo - Chorrillos</p>
+                <p><b>Costo:</b> S/. 120</p>
+                <p><b>Dormitorios:</b> Individuales - con baño propio</p>
+                <p><b>Reglas de casa:</b>
+                <br>
+                - Reglas de la casa <br>
+                - No se admiten fiestas o eventos <br>
+                - La hora de llegada es flexible <br>
+                - Llegada con acceso libre con candado</p> 
+                <p><b>Calificación:</b><i class="Small material-icons">star_border</i><i class="Small material-icons">star_border</i><i class="Small material-icons">star_border</i></p> 
+               </div>
+              </div>              
+        </div>
+       </div>
+       
+       </section>
+       </main>
+  <!-- Barra de navegación con iconos -->  
+  <div class="navIcons">
+    <div class="row">
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="home.html"><i class="medium material-icons">home</i></a></div>       
+        <h6 class="center-align hidden">Inicio</h6>
+      </div>
+      <div class="col s3 divIcons t-c">
+        <div class="center-align"><a href=""><i class="medium material-icons">search</i></a></div>        
+        <h6 class="center-align hidden">Buscar</h6>
+      </div>
+      <div class="col s3 divIcons">
+          <div class="center-align"><a href="contact.html"><i class="medium material-icons">group</i></a></div>
+        <h6 class="center-align hidden">Contactos</h6>
+      </div>
+      <div class="col s3 divIcons">
+        <div class="center-align"><a href="profile.html"><i class="medium material-icons">person</i></a></div>
+        <h6 class="center-align hidden">Perfil</h6>
+      </div>
+    </div>
+  </div>
+  <!-- Libreria JQuery -->
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <!-- JS Materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Libreria de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- Referencias de conexión con Firebase -->
+  <script src="../js/conexion.js"></script>
+  <!-- JS NAV ICON -->
+  <script src="../js/navIcon.js"></script>
+  <!-- JS personalizado -->
+  <script src="../js/home.js"></script>
+</body>
+</html>

@@ -1,32 +1,174 @@
-/** Clases generales **/
+/***** Clases generales *****/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/***** Clases reutilizables *****/
 /** Altura del viewport **/
 .vh100 {
-  height: 100vh;
+    height: 100vh;
 }
 /** Contenedor centrado con Flex **/
 .container-flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /* Aplicando flex inferior*/
 .flex-lower {
-  display: flex;
-  flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
 }
 /** Elementos al centro **/
 .item-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* Texto gris */
+.t-g {
+    color: #2B2B2B;
+}
+/* Texto celeste */
+.t-c {
+    color: #3498DB
+}
+/* Fondo celeste */
+.bg-c {
+    background-color: #3498DB;
+}
+.bg-c:hover {
+    background-color: #3498DB;
+}
+/* Fondo celeste claro */
+.bg-cc {
+    background-color: #E1E4E2;
+}
+.bg-bd {
+    background-color: #1660A1;
+}
+/* Boton color blanco */
+.btn-w {
+    background-color: #FFF;
+}
+.btn-w:hover {
+    background-color: #FFF;
+}
+/* Fondo transparente oscuro */
+.bg-dark {
+    background-color: rgba(5, 5, 5, 0.568);
+}
+/* Ocultar */
+.hidden {
+    visibility: hidden
+}
+/* Quitar */
+.none {
+    display: none
+}
+/*  Mostrar */
+.show {
+    display: block;
+}
+/***** Clases personalizadas *****/
+/** HTML INDEX **/
+.splash {
+    background: linear-gradient(rgb(44, 63, 124) 20%,rgb(107, 135, 228));
+}  
+h1.title {
+    font-size: 4em;
+    font-weight: bold;
+}
+/** HTML MAIN **/
+.fg{ /*** Imagen de prueba ***/
+    background-image: url(../assets/images/flat.jpg);
+}
+.signin .btn, .signup .btn {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+.signin label, .signup label{
+    color: #FFF;
+    font-size: 1.5rem;
+}
+.signin input[type=email]:focus, .signin input[type=password]:focus, 
+.signin input[type=email]:hover, .signin input[type=password]:hover,
+.signin input[type=email]:active, .signin input[type=password]:active,
+.signup input[type=email]:focus, .signup input[type=password]:focus, 
+.signup input[type=email]:hover, .signup input[type=password]:hover,
+.signup input[type=email]:active, .signup input[type=password]:active,
+{
+    border-bottom: 1px solid #FFF !important;
+    color: #FFF;
+    font-size: 1.4em;
+    box-shadow: 0 1px 0 0 #FFF !important;
+    background-color: transparent;    
+}
+.separator hr {
+    height: 5px;
+    background-color: #FFF;
+}
+/** **/
+.imgback{
+    background-image: url('../assets/images/student1.jpg');
+    /* background-color: rgba(77, 77, 77, 0.8);
+    filter:brightness(0.1); */
+    height: 100vh;
+    background-size: cover
+  }
+  .data-background label{
+    color: white;
+    font-size: 1.5rem;
+  
+  }
+/** HTML HOME **/
 
-/** HTML MAIN button **/
-.btn-rg, .btn-is {
-  margin-bottom: 10px;
+.navIcons {
+    background-color: #CDDDEB;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;    
+}
+.publications {
+    margin-bottom: 5em;
+}
+.areaPublication{
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+    overflow: hidden;
+}
+.publications .header {
+    padding-top: 5px;
+}
+.publications .header .dateTime{
+    margin-top: -5px;
+}
+.navIcons i {
+    font-size: 3em;
+    padding-top: 8px;
+}
+.navIcons h6 {
+    margin-top: -7px;
+}
+.navIcons .row, .publications .row, .mypublication .row{
+    margin-bottom: 0;
+}
+.navCollapsible .side-nav {
+    width: 200px;
+}
+.navCollapsible .brand-logo {
+    left: 30%;
 }

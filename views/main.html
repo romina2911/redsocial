@@ -1,27 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Principal</title>
+  <title>Cozy Room</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png">
   <!-- Framework Materialize CSS -->
   <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
   <!-- CSS Personalizado -->
   <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-  <div class="container vh100 flex-lower">
-    <div class="row ">
-      <a href="registry.html" class="waves-effect waves-light btn item-flex-center btn-rg">Registrarse</a>
-      <a href="login.html" class="waves-effect waves-light btn item-flex-center btn-is">Iniciar Sesión</a>
+<body class="vh100 fg">
+  <!-- Versión Mobile -->
+  <div class="container">
+    <!-- Logo -->
+    <div class="row item-flex-center">
+      <h1 class="title t-g">Cozy Room</h1>
+    </div>
+    <!-- Iniciar sesión -->
+    <div class="row signin">
+      <form class="offset-s1 col s10 bg-dark">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Correo Electrónico</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+          <a id="btnLogin" class="waves-effect waves-light btn item-flex-center bg-c" disabled>Iniciar Sesión</a>
+      </form>
+    </div>
+    <!-- Separador o -->
+    <br>    
+    <div class="container-flex-column separator">
+      <div class="row white-text">
+        <div class="offset-s2 col s8 item-flex-center">
+          <hr class="col s4">
+          <h3 class="col s4 center-align">o</h3>
+          <hr class="col s4">
+        </div>            
+    </div>      
+    </div>
+    <br>
+    <!-- Botones de registro -->
+    <div class="row signup">
+      <div class="col s12">
+        <!--<a href="#" class="waves-effect waves-light btn item-flex-center btn-w t-g">Registrate con Google</a>-->
+        <a href="registry.html" class="waves-effect waves-light btn item-flex-center bg-c">Registrarse</a>
+      </div>
     </div>
   </div>
-  <!-- Libreria JQuery  -->
-  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- Libreria JQuery -->
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
   <!-- JS Materialize -->
   <script src="../vendors/materialize/js/materialize.min.js"></script>
-  <!-- JS Personalizado -->
-  <script src="../js/main.js"></script>
+  <!-- Libreria de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- Referencias de conexión con Firebase -->
+  <script src="../js/conexion.js"></script>
+  <!-- JS personalizado -->
+  <script src="../js/app.js"></script>
 </body>
 </html>
