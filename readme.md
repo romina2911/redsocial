@@ -1,12 +1,8 @@
-**Proyecto Red Social**
-
+# Cozyroom
 Cozy Room es un app diseñada para jóvenes de provincias que desean instalarse en Lima. Este proyecto grupal es parte del Common core en él se trabajó la parte UX y Front-end aprendida en el bootcamp.
-
-***
 
 ![cozyroom](https://user-images.githubusercontent.com/32309909/36388662-a18f86a2-156a-11e8-827b-62a34232c466.jpg)
 
-***
 ## Desarrollado para 
 [Laboratoria](http://laboratoria.la)
 
