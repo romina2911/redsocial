@@ -13,6 +13,7 @@ Cozy Room es un app diseñada para jóvenes de provincias que desean instalarse 
 
 ***
 
+
 ### Miembros
 - De la Cruz Lozano Pamela
 - Herrera Polo Romina Valeria
